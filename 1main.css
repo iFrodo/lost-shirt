@@ -326,9 +326,18 @@ padding: 5px 10px;
     padding-bottom: 115px;
 
  }
+ .container__footer{
+    width: 1105px;
+ }
  .site-menu__sections{
     display: flex;
     justify-content: space-between;
+ }
+ .site-menu__col{
+    margin-right: 20px;
+ }
+ .site-menu__col:last-child{
+    margin-right: 0px;
  }
  .site-menu__title{
     font-family: var(--titleFont);
@@ -338,9 +347,27 @@ padding: 5px 10px;
     text-transform: uppercase;
     margin-bottom: 24px;
  }
+
  .site-menu__link{
     text-decoration: none;
+    color:#737373;
     font-family: var(--titleFont);
     font-size:18px;
     line-height: 2rem;
+ }
+ .site-menu__link:hover{
+    color: var(--red);
+ }
+ .site-menu__text{
+    font-size: 15px;
+    color:var(--black);
+    text-decoration: none;
+    margin-bottom:20px;
+ }
+ .site-menu__text-row{
+    color:inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+
  }
