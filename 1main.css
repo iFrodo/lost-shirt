@@ -40,6 +40,83 @@ body{
     position: relative;
     margin-bottom: 130px;
 }
+.sidebar{
+    width: 75px;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    background:#212112;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.sidebar__menu{
+position: absolute;
+left:-400px
+}
+.sidebar--opened .sidebar__menu{
+
+    left:0;
+    width: 100%;
+    text-align: center;
+    
+}
+.sidebar__hamburger-icon{
+    width: 29px;
+    height: 29px;
+    fill:var(--yellow)
+}
+.sidebar__hamburger{
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.sidebar--opened .sidebar__hamburger{
+    display: none;
+}
+.sidebar--opened{
+    width: 325px;
+    padding: 0 3% 0 4%;
+
+}
+.sidebar--opened .sidebar__header{
+    display: flex;
+}
+.sidebar__header{
+    position: absolute;
+    top: 29px;
+    right: 0;
+    left:0;
+    display:none;
+    justify-content: center;
+}
+.sidebar__close-icon{
+    height: 29px;
+    width: 29px;
+    fill:var(--yellow);
+  position: absolute;
+  top:-4px;
+  right: 23px;
+
+}
+.side-menu__link{
+    line-height: 2;
+    text-transform: uppercase;
+    font-size:20px;
+    font-family:var(--titleFont) ;
+    color: var(--yellow);
+    text-decoration: none;
+}
+.side-menu__link:hover{
+    color: var(--red);
+   
+}
 ul{
     margin: 0;
     padding: 0;
